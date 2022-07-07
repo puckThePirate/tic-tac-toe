@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\style.css">
+    <script src=".\script.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="home"><a href=".\index.html"><button class="home-btn">&lt;</button></a></div>
+    <div class="content">
+        <div class="play-one">
+            <img src=".\images\player.svg" height="100px" width="100px" alt="player">
+            <div>Player One</div>
+        </div>
+        <div class="game">
+            <div class="score">
+                <div class="playone-score">
+                    <div>Player One Score: </div>
+                    <div>0</div>
+                </div>
+                <div class="playtwo-score">
+                    <div>Player Two Score: </div>
+                    <div>0</div>
+                </div>
+            </div>
+            <div class="gameboard">
+                <div class="row rone">
+                    <div data-fill= "0" class="cell" id="one"></div>
+                    <div data-fill= "0" class="cell" id="two"></div>
+                    <div data-fill= "0" class="cell" id="three"></div>
+                </div>
+                <div class="row rtwo">
+                    <div data-fill= "0" class="cell" id="four"></div>
+                    <div data-fill= "0" class="cell" id="five"></div>
+                    <div data-fill= "0" class="cell" id="six"></div>
+                </div>
+                <div class="row rthree">
+                    <div data-fill= "0" class="cell" id="seven"></div>
+                    <div data-fill= "0" class="cell" id="eight"></div>
+                    <div data-fill= "0" class="cell" id="nine"></div>
+                </div>
+            </div>
+        </div>
+        <div class="play-two">
+            <img src=".\images\player.svg" height="100px" width="100px" alt="player">
+            <div>Player One</div>
+        </div>
+    </div>
+    <div class="play-again"><button class="play-btn">Play Again!</button></div>
+</body>
+</html>
