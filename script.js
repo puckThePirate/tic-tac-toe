@@ -26,6 +26,8 @@ let playTwo = players();
 
 const start = function() {
     playOne.turn = 1;
+    playOne.mark = 0;
+    playTwo.mark = 0;
     playOne.msg.textContent = '';
     playTwo.msg.textContent = '';
     gameBoard.cells.forEach(cell => {
@@ -115,6 +117,7 @@ const callout = function(filler) {
 
        
         const parent = document.querySelector('.play-one');
+        playOne.msg.style.color = '#4fffb0';
         playOne.msg.textContent = "Player One Wins!";
         parent.appendChild(playOne.msg);
 
@@ -128,11 +131,14 @@ const callout = function(filler) {
         displayScore.appendChild(theScore);
 
         const parent = document.querySelector('.play-two');
+        playTwo.msg.style.color = '#4fffb0';
         playTwo.msg.textContent = "Player Two Wins!";
         parent.appendChild(playTwo.msg);
     } else {
         const parenttwo = document.querySelector('.play-two');
         const parentone = document.querySelector('.play-one');
+        playOne.msg.style.color = '#ffd700';
+        playTwo.msg.style.color = '#ffd700';
         playTwo.msg.textContent = "Draw!";
         playOne.msg.textContent = "Draw!";
         parentone.appendChild(playOne.msg);

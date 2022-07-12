@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+   
 }
 
 body, html {
@@ -11,13 +11,68 @@ body, html {
 
 /* for first page */
 
+.container {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
+.lets-play, .tic-tac-toe {
+    color: royalblue;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+}
 
+.to-game {
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.game-btn {
+    background-color: pink;
+    padding: 10px 20px;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
 
 
 
 
 /* for game page */
+
+.home {
+    margin: 20px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.home-btn {
+    background-color: pink;
+    padding: 5px 15px;
+    font-size: 36px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
 
 .content {
     display: grid;
@@ -26,6 +81,9 @@ body, html {
 
 .play-one, .play-two {
     padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +91,9 @@ body, html {
 }
 
 .score {
+    margin: 15px;
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,8 +103,24 @@ body, html {
     display: flex;
 }
 
+.gameboard {
+    margin: 20px;
+}
+
 .row {
     display: flex;
+}
+
+.rone, .rtwo {
+    border-bottom: 4px solid darkgrey;
+}
+
+#one, #four, #seven {
+    border-right: 4px solid darkgrey;
+}
+
+#three, #six, #nine {
+    border-left: 4px solid darkgray;
 }
 
 .cell {
@@ -58,4 +135,16 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.play-btn {
+    background-color: tomato;
+    padding: 5px 15px;
+    font-size: 36px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
